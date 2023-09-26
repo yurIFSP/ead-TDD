@@ -35,4 +35,14 @@ class MainTest {
         assertEquals("0",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10","10","10","10"}));
         assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10","10","10","10","10"}));
     }
+
+    @Test
+    void checarCalculo(){
+        //Exemplo 1: Entrada = 2 2 2 2 2 2 3 | Saída = 1
+        assertEquals("1",Main.calcAcimaDaMedia(new String[]{"2", "2", "2", "2","2","2","3"}));
+        //Exemplo 2: Entrada = 21 10 13 34 30 21 34 | Saída = 3
+        assertEquals("3",Main.calcAcimaDaMedia(new String[]{"21", "10", "13", "34","30","21","34"}));
+       //Exemplo 3: Entrada = 2 2 2 2 2 2 1| Saída = 6
+        assertEquals("6",Main.calcAcimaDaMedia(new String[]{"2", "2", "2", "2","2","2","1"}));
+    }
 }
