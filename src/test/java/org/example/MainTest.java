@@ -23,4 +23,16 @@ class MainTest {
         assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "11", "12", "13", "14", "15", "1.0"}));
         assertEquals("0",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10", "10", "10", "10"}));
     }
+
+    @Test
+    void checarTamanhoDoInput(){
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10"}));
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10","10"}));
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "10", "10"}));
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10"}));
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10","10"}));
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10","10","10"}));
+        assertEquals("0",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10","10","10","10"}));
+        assertEquals("Erro",Main.calcAcimaDaMedia(new String[]{"10", "10", "10", "10","10","10","10","10"}));
+    }
 }

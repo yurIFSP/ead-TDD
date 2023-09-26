@@ -7,7 +7,7 @@ public class Main {
     }
     public static String calcAcimaDaMedia(String[] args){
 
-        if(args.length == 0){
+        if(args.length != 7){
             return ERROR;
         }
         for(var arg:args){
